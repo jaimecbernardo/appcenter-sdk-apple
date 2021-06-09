@@ -20,7 +20,11 @@ let package = Package(
         .library(
             name: "AppCenterCrashes",
             type: .static,
-            targets: ["AppCenterCrashes"])
+            targets: ["AppCenterCrashes"]),
+        .library(
+            name: "AppCenter",
+            type: .static,
+            targets: ["AppCenter"])
     ],
     dependencies: [
         .package(url: "https://github.com/microsoft/plcrashreporter.git", .upToNextMinor(from: "1.8.0")),
